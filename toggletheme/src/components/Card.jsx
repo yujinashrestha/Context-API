@@ -1,27 +1,27 @@
 import React from 'react'
 
-function Card() {
-  return (
-    <>
-    <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white p-4">
-  <img class="w-full rounded-xl" src="https://via.placeholder.com/400x200" alt="Card image" />
-  <div class="px-2 py-4">
-    <h2 class="font-bold text-xl mb-2 text-gray-800">Card Title</h2>
-    <p class="text-gray-600 text-base">
-      This is a simple card component using Tailwind CSS. Customize it however you like!
-    </p>
-  </div>
-  <div class="px-2 pt-4 pb-2">
-    <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-xl transition duration-300">
-      Action
-    </button>
-  </div>
-</div>
-
-    
-    
-    </>
-  )
+export default function Card() {
+    return (
+        <div className="flex justify-center items-start h-screen mt-7">
+            
+                <div className="p-2 w-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="/">
+                        <img className="p-8 rounded-t-lg bg-cover bg-no-repeat bg w-full h-96"  src="https://images.pexels.com/photos/30340931/pexels-photo-30340931/free-photo-of-vintage-clock-inside-dhaka-metro-station.jpeg?auto=compress&cs=tinysrgb&w=600" alt="product_image1" />
+                    </a>
+                    <div className="px-5 pb-5">
+                        <a href="/">
+                            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white text-[20px]">
+                            Time flows like a silent stream,
+                            Moments vanish like a dream.
+                            We hold so little, yet so much—
+                            A fleeting touch, a lasting touch.
+                            </h5>
+                        </a>
+                       
+                        
+                    </div>
+                </div>
+            
+        </div>
+    );
 }
-
-export default Card
